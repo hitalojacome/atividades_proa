@@ -1,0 +1,45 @@
+a {
+    background-image: url("/imagens/sun.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border-width: 50px;
+    border-color: rgba(255, 0, 0, 0.5);
+    border-radius: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: 2s ease;
+}
+
+a:hover {
+    border-width: 0.2px;
+    border-color: rgba(0,0,0,0.5);
+    transition: 1.5s ease;
+}
+
+.efeito1 {border-style: solid;}
+.efeito2 {border-style: dashed;}
+.efeito3 {border-style: dotted;}
+
+.efeito4 {border: 50px solid rgba(0,0,0,0.7);}
+.efeito5 {border: 50px dashed rgba(0,0,0,0.7);}
+.efeito6 {border: 50px dotted rgba(0,0,0,0.7);}
+.efeito7 {border: 50px double rgba(0,0,0,0.7);}
+
+.efeito4:hover {border: 1px solid rgba(0,0,255,0.7);}
+.efeito5:hover {border: 1px dashed rgba(0,0,255,0.7);}
+.efeito6:hover {border: 1px dotted rgba(0,0,255,0.7);}
+.efeito7:hover {border: 1px double rgba(0,0,255,0.7);}
+
+.efeito8, .efeito9, .efeito10 {
+    border-radius: 0;
+}
+
+.efeito8 {border: 50px solid rgba(0,0,0,0.7);}
+.efeito9 {border: 50px dashed rgba(0,0,0,0.7);}
+.efeito10 {border: 50px double rgba(0,0,0,0.7);}
+
+.efeito8:hover {border: 1px solid rgba(0,100,0,0.7);}
+.efeito9:hover {border: 1px dashed rgba(0,100,0,0.7);}
+.efeito10:hover {border: 1px double rgba(0,100,0,0.7);}

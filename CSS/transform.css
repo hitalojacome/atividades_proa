@@ -6,37 +6,89 @@ div img{
 }
 
 .foto1 {
+    transform: rotate(0deg); /* efeito de rotação dado em graus */
+    transition: all 1s;
+}
 
+.foto1:hover {
+    transform: rotate(360deg);
+    transition: all 1s;
 }
 
 .foto2 {
-    
+    transform: rotateX(10deg);  /* efeito de rotação em vertical */
+    transition: all 1s;
+}
+
+.foto2:hover {
+    transform: rotateX(70deg);
+    transition: all 1s;
 }
 
 .foto3 {
-    
+    -webkit-transform: rotateY(0deg); /* efeito de rotação em horizontal */
+    transition: 0.5s ease-out;
+}
+
+.foto3:hover {
+    -webkit-transform: rotateY(180deg);
+    transition: 0.5s ease-out;
 }
 
 .foto4 {
-    
+    -webkit-transform: translate(0px,0px); /* efeito de movimentação */
+    transition: 0.5s all;
+}
+
+.foto4:hover {
+    -webkit-transform: translate(100px,50px);
+    transition: 0.5s all;
 }
 
 .foto5 {
-    
+    transform: scale(1.0); /* escala de tamanho */
+    transition: 1s all;
+}
+
+.foto5:hover {
+    transform: scale(2.0);
+    transition: 1 ease-out;
 }
 
 .foto6 {
-    
+    transition: 1s;
+}
+
+.foto6:hover {
+    transform: translate(100px,150px) rotate(180deg); /* utilizando rotação e movimentação */
+    transition: 0.5 ease-out;
 }
 
 .foto7 {
-    
+    -webkit-transform: translate(0px); /* efeito de movimentação */
+    transition: 0.5s all;
+}
+
+.foto7:hover {
+    -webkit-transform: translate(380px); /* efeito de movimentação */
+    transition: 0.5s all;
 }
 
 .foto8 {
-    
+    transform: scale(1.0); /* escala de tamanho */
+    transition: 1s all;
+}
+
+.foto8:hover {
+    transform: scale(0.5);
+    transition: 1 ease-out;
 }
 
 .foto9 {
-    
+    transition-duration: 0.5s;
+}
+
+.foto9:hover {
+    transform: scale(1.8) translate(20px,50px) rotate(360deg); /* utilizando rotação, movimentação e escala */
+    transition: all 0.5 ease-out;
 }

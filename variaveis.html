@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Testando Variaveis</h1>
+
+    <script>
+
+        // var = forma "antiga" de definir variavel, let = "forma atual que pode usar a variavel em todo o codigo"        
+
+        // declarando variavel com let
+        let nome = prompt("Digite seu nome: "); // *prompt* o usuario define o valor da variavel
+        let idade = parseInt(prompt("Digite sua idade: ")); // parseInt = define que o valor que o usuario vai adicionar é inteiro
+        let altura = parseFloat(prompt("Digite sua altura:  ")); // parseFloat = define que o valor que o usuario vai adicionar é flutuante com casa decimal
+        let peso = parseFloat(prompt("Digite seu peso:  "));
+        let rua = prompt("Informe a rua que você mora:  ");
+        let numero = parseInt(prompt("Informe o número da sua residencia:  "));
+        let bairro = prompt("Informe seu bairro:  ");
+        let cidade = prompt("Informe sua cidade:  ");
+        let estado_civil = prompt("Informe seu estado civil:  ");
+        let genero = prompt("Informe seu gênero:  ");
+        let nacionalidade = prompt("Informe sua nacionalidade:  ");        
+
+        document.write("Olá " + nome);
+        document.write("<br>");
+        document.write("Vi que você tem " + idade + " anos");
+        document.write("<br>"); 
+        document.write(altura + "M de altura e pesa " + peso + "Kg");
+        document.write("<br>");
+        document.write("Também acessei seu endereço na Rua:" + rua + " N° " + numero + " " + bairro + "," + cidade);
+        document.write("<br>");
+        document.write("Atualmente você está " + estado_civil);
+        document.write("<br>");
+        document.write("E seu genero é " + genero);
+        document.write("<br>");
+        document.write("E por fim, vi que você é " + nacionalidade);
+    </script>
+</body>
+</html>

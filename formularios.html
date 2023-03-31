@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Cadastro</legend>
+
+            <label>Entre com o seu nome:</label> <!-- label é a descrição do campo -->
+            <input type="text" name="none" maxlength="45" size="50" placeholder="Digite seu nome aqui:" tabindex="2"> <!-- placeholder é a descrição dentro do campo que desaparece ao preenche-lo  -->
+            <br> <br>
+
+            <label>Entre com seu CPF:</label>
+            <input type="text" maxlength="11" required placeholder="Digite o CPF aqui..." tabindex="1">  <!-- required torna o campo obrigatorio para enviar o formulario  -->
+            <br> <br>
+
+            <label>Entre com seu e-mail:</label>
+            <input type="email" name="mail" maxlength="30" size="30" tabindex="3"> <!-- tabindex é o que determina a sequencia ao selecionar "tab" -->
+            <br> <br>
+
+            <label>Entre com a sua senha</label>
+            <input type="password" name="senha" size="10">  <!-- type="password" formata o campo onde esconde os caracteres -->
+            <br> <br>
+
+            <label>Você utiliza nosso site frequentemente?</label>
+            <input type="radio" name="resp" value="sim"> Sim   <!-- type="radio" cria uma box de opções unica -->
+            <input type="radio" name="resp" value="nao"> Nao
+            <br> <br>
+
+            <label> Qual browser vc costuma usar para acesso ao site?</label>
+            <input type="checkbox" name="opcao1" value="fire"> Firefox
+            <input type="checkbox" name="opcao2" value="chro"> Chrome
+            <input type="checkbox" name="opcao3" value="IE"> Internet Explorer
+            <input type="checkbox" name="opcao4" value="safa"> Safari
+            <input type="checkbox" name="opcao5" value="oper"> Opera
+            <br> <br>
+
+            <label>Selecione uma area de atuacao</label>
+            <select name="opcao">
+                <option>Marketing</option>
+                <option>Comercial</option>
+                <option>Vendas</option>
+                <option>Web</option>
+                <option>Administração</option>
+            </select>
+            <br> <br>
+
+            <label>Deixe aqui o seu comentario</label>
+            <br>
+            <textarea cols="20" rows="10" placeholder="Comente aqui:"></textarea>
+            <br><br>
+
+            <label>Entre com um número:</label>
+            <input type="number" min="10" max="20">
+            <br><br>
+
+            <label>Selecione uma data</label>
+            <input type="date">  <!-- type="data" formata o campo com dd/mm/aaa -->
+            <br><br>
+
+            <progress value="60" max="100">60%</progress> <!-- pre loader, evolução do processo -->
+            <br><br>
+
+            <meter min="0" max="100" low="40" high="90" optimum="100" value="30"></meter> <!-- medida, usada por exemplo em medição de senha (senha fraca, media ou forte) -->
+            <br><br>
+
+            <input type="search" url="#" placeholder="Pesquise"> <!-- type="search" para pesquisas -->
+            <br><br>
+
+            <label>Escolha sua cor</label> <!-- type="color" abre uma paleta de cores para edição -->
+            <input type="color">
+            <br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar campos">
+
+        </fieldset>
+    </form>
+</body>
+</html>

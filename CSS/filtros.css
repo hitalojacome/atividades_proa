@@ -1,0 +1,91 @@
+div img { 
+    height: 200px;
+    width: 16%;
+    border: 1px solid #ccc;
+    border: 5px;
+    margin: 5px;
+}
+
+div img:hover {
+    box-shadow: 5px 5px 5px rgb(0, 8, 153);
+    cursor: pointer;
+    filter: none;
+    transition: all 0.5s;
+}
+
+.grayscale {  /* filtro preto e branco */
+    filter: grayscale(100%);
+}
+
+.saturate {  /* filtro saturado */
+    filter: saturate(3);
+}
+
+.sepia {  /* enfeito de envelhecimento */
+    filter: sepia(100%);
+}
+
+.invert { /* inverte as cores, efeito negativo */
+    filter: invert(100%);
+}
+
+.blur { /* efeito embaçado */
+    filter: blur(3px);
+}
+
+.opacity { /* efeito transparencia */
+    filter: opacity(30%);
+}
+
+.brightness { /* efeito brilho */
+    filter: brightness(0.25);
+}
+
+.contrast {
+    filter: contrast(160%);
+}
+
+#rollover {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-image: url("/imagens/husky.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    transition: all 1s;
+}
+
+#rollover:hover {
+    background-image: url("/imagens/Programmer_Cat.jpg");
+    transition: all 1s;
+}
+
+#liga_desliga {
+    position: relative;
+    width: 120px;
+    height: 150px;
+    background-image: url("/imagens/botao_off.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+}
+
+#liga_desliga:hover {
+    background-image: url("/imagens/botao_on.png");
+}
+
+#on_off {
+    position: relative;
+    width: 180px;
+    height: 80px;
+    background-image: url("/imagens/botao_on_off.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+}
+
+#on_off:hover {
+    background-position: 0px -120px;
+    cursor: pointer;
+}

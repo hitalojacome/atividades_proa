@@ -1,0 +1,113 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+main{             /* Conteúdo principal da página (fundo) */
+    position: relative;
+    width: 90%;
+    height: auto;
+    background-color: darkgray;
+    margin: auto;
+}
+
+header{          /* Cabeçalho da página */
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(51, 142, 6);
+    text-align: center;
+    padding: 50px 0;
+}
+
+#sectionleft{
+    position: relative;
+    width: 30%;
+    height: 400px;
+    background-color: aquamarine;
+    float: left;
+}
+
+#sectionright{
+    position: relative;
+    width: 70%;
+    height: 400px;
+    background-color: blueviolet;
+    float: left;
+}
+
+footer{          /* Rodapé da página */
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    background-color: darkred;
+    text-align: center;
+    color: #fff;
+    clear: left;
+}
+
+nav, aside {
+    position: relative;
+    width: 95%;
+    height: 45%;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 3.3%;
+}
+
+article {
+    position: relative;
+    width: 98%;
+    height: 97%;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 1.5%;
+}
+
+article h1 {
+    position: relative;
+    width: 100%;
+    height: 8%;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+p {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(226, 30, 69);
+    color: #fff;
+    margin-top: 0.5%;
+}
+
+div {
+    position: relative;
+    width: 100%;
+    height: 58%;
+    background-color: rgb(56, 191, 203);
+    margin-top: 0.5%;
+}
+
+a {
+    width: 98.1%;
+    color: #fff;
+    background-color: blue;
+    text-decoration: none; /* retira o sublinhado do hiperlink */
+    padding: 0.5%;
+    display: block; /* um encima do outro */
+    margin: 0.5%;
+
+}
+a:hover {
+    background-color: #000;
+    width: 70%;
+    transition: 2s;
+    text-align: center;
+}
+
+/* a:link (para trabalhar somente com os hiperlinks), a:visited (para trabalhar com os hiperlinks visitados) 
+a:active (para trabalhar com os hiperlinks ativados quando segura com o mouse), 
+a:hover (para trabalhar quando se passa o mouse no hiperlink) */

@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(44, 4, 69);
+    color: #ffffff;
+}
+
+body p{
+    font-size: 20px;
+}
+
+#myImage{
+    width: 600px;
+    height: auto;
+    margin-left: 33%;
+    
+}
+
+
+

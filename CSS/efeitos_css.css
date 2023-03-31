@@ -1,0 +1,103 @@
+body {
+    margin: 50px;
+}
+
+.moldura {
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 50px;
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 3px;
+}
+
+#caixa {
+    width: 200px;
+    height: 200px;
+    background-color: #CDF;
+    border: 1px solid;
+    box-shadow: -10px -10px 10px rgb(0, 8, 153); /* cria uma borda sombreada -box shadow: direção direção expessura cor;- */
+    border-radius: 15px;
+    padding: 10px; 
+}
+
+.sombra_texto {
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 5px 5px 10px #099; /* cria uma sombra no texto -text-shadow: direção direção expessura cor;- */
+}
+
+.colunas {
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 12px;
+    column-count: 3; /* determina em quantas colunas se quebra o texto */
+    column-rule: 1px solid blue; /* formata a linha vertical entre as colunas -column-rule: expessura tipo cor-*/
+    column-gap: 1em; /* determina o espaço entre as colunas */
+    text-align: justify;
+}
+
+#caixa2 {
+    width: 500px;
+    height: 400px;
+    background-image: url("../imagens/sun.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#transparente {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 0, 255, 0.5);
+}
+
+#gradiente1 {
+    width: 400px;
+    height: 200px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ccffcc), to(#00ff00)); /* degrade linear -webkit-gradient(linear, começa, termina, de(cor), até(cor));  */
+    margin-top: 30px;
+}
+
+#gradiente2 {
+    width: 400px;
+    height: 200px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1f6f1), to(#ff6f00));
+    margin-top: 30px;
+}
+
+#gradiente3 {
+    width: 400px;
+    height: 200px;
+    background: -webkit-gradient(radial, 50% 50%, 20, 50% 50%, 90, from(#f1f6f1), to(#3b1d07)); /* degrade radial -webkit-gradient(radial, posição 1 circulo, tamanho 1 circulo, posição 2 circulo, tamanho 2 circulo, de(cor), até(cor));  */
+    margin-top: 30px;
+}
+
+@keyframes pulsar {  /* cria a animação */
+    from{
+        opacity: 0;
+        font-size: 100%;
+    }
+
+    to {
+        opacity: 1;
+        font-size: 200%;
+    }
+
+}
+
+#animacao {
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 12px;
+    color: red;
+    text-align: center;
+
+    animation-name: pulsar; /* keyframes */
+    animation-duration: 2s; /* duração para acondecer a animação */
+    animation-iteration-count: infinite; /* quantas vezes vai rodar a animação */
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}

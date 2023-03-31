@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <h1>Calculo do Indice de Média Corporal</h1>
+
+    <!--<script>
+        let nome = prompt("Informe seu nome: ")
+        let altura = parseFloat(prompt("Informe a sua altura Metros: "))
+        let peso = parseFloat(prompt("Informe o seu peso em Kg: "))
+
+        let imc = (peso / (altura * altura)).toFixed(2) // toFixed() formata o numero float
+
+        document.write("Sr.(a) " + nome + " seu Índice de Massa Corporal está em " + imc)
+        document.write("<br>");
+
+        if(imc <18.5){
+            document.write("Você está abaixo do peso.")
+        } else if(imc <25){
+            document.write("Seu peso está dentro do normal.")
+        } else if(imc <30){
+            document.write("Você está com sobrepeso.")
+        } else if(imc <35){
+            document.write("Você tem obesidade Grau I.")
+        } else if (imc <40){
+            document.write("Você tem obesidade Grau II.")
+        } else {
+            document.write("Você tem obesidade Grau III ou Mórbida.")
+        }
+    </script>-->
+    <script>
+        let nome = prompt("Informe seu nome: ")
+        let altura = parseFloat(prompt("Entre com sua altura:"))
+        let peso = parseFloat(prompt("Entre com seu peso:"))
+
+        let imc = (peso / (Math.pow(altura,2))).toFixed(2)
+
+        document.write("Sr.(a) " + nome + " seu Índice de Massa Corporal está em " + imc + "<br>")
+
+        if(imc <18.5){
+            document.write("Você está abaixo do peso ideal.")
+        } else if(imc >=18.5 && imc <25){
+            document.write("Seu peso está com o peso ideal.")
+        } else if(imc >=25 && imc <30){
+            document.write("Você está com sobrepeso.")
+        } else if(imc >=30 && imc <35){
+            document.write("Você tem obesidade Grau I.")
+        } else if (imc >=35 && imc <40){
+            document.write("Você tem obesidade Grau II.")
+        } else {
+            document.write("Você tem obesidade Grau III ou Mórbida.")
+        }
+    </script>
+</body>
+</html>

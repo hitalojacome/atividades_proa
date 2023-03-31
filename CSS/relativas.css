@@ -1,0 +1,51 @@
+#fundo{
+    position: relative;
+    width: 80%;
+    height: 600px;
+    background-color: darkgray;
+    margin: auto;
+}
+
+#camada1{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    background-color: yellow;
+    border: 2px solid #000;
+    text-align: center;
+    padding: 5px;
+    float:left; /* faz o encaixe de componentes a esquerda */
+}
+
+#camada2{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    background-color: violet;
+    border: 2px solid purple;
+    text-align: center;
+    padding: 5px;
+    float:left;
+}
+
+#camada3{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    background-color: red;
+    border: 2px solid yellow;
+    text-align: center;
+    padding: 5px;
+    clear:left; /* quebra a sequência float */ 
+    float: left;
+} 
+#camada4{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    background-color: burlywood;
+    border: 2px solid brown;
+    text-align: center;
+    padding: 5px;
+    float: left;
+} 

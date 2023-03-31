@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Switch Case</title>
+</head>
+<body>
+    
+    <h1>Trabalhando com laços</h1>
+
+    <script>
+        let farol = prompt("Entre com a cor do farol").toLowerCase();  /* formata o prompt para o texto que o usuario inserir ficar sempre Lower */
+
+        switch(farol){
+            case "vermelho":
+                alert("Pare o carro!")
+                break /* para o código após executar o comando a cima */
+
+            case "amarelo":
+                alert("Pare o carro!")
+                break
+
+            case "verde":
+                alert("Prossiga!")
+                break
+
+            default:   /* conceito semelhante ao else */
+                alert("Cor inválida!!")
+        }
+    </script>
+
+</body>
+</html>

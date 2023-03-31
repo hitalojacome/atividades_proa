@@ -1,0 +1,49 @@
+#camada1{ /* estilizando somente o id */
+    position:absolute; /* componente absoluto: coloca o elemento sobre os outros elementos */
+    left: 100px; /* deslocamento do componente absoluto a partir da esquerda da pagina */
+    top: 100px; /* deslocamento do componente absoluto a partir de cima da pagina */
+    width: 170px; /* largura do elemento */
+    height: 120px; /* altura do elemento */
+    background-color: antiquewhite;
+    border: 2px solid #F00; /* formatção da borda, largura, tipo, cor */ 
+    text-align: center; /* posicionamento */
+    z-index: 1; /* posicionamento/empilhamento "quem vai encima de quem" z é um eixo */
+}
+
+#camada2{ 
+    position:absolute; 
+    left: 150px; 
+    top: 150px; 
+    width: 170px; 
+    height: 120px; 
+    background-color: rgb(56, 110, 5);
+    border: 2px solid #000; 
+    text-align: center; 
+    z-index: 2;
+}
+
+#camada3{ 
+    position:absolute; 
+    left: 200px; 
+    top: 200px; 
+    width: 170px; 
+    height: 120px; 
+    background-color: orangered;
+    border: 2px solid #FFFF0F; 
+    text-align: center; 
+    z-index: 3;
+}
+
+#camada4{ 
+    position:absolute; 
+    left: 250px; 
+    top: 250px; 
+    width: 170px; 
+    height: 120px; 
+    z-index: 4;
+}
+
+img{
+    width: 1000%;
+    height: 1000%;
+}
